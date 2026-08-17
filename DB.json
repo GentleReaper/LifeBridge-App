@@ -1,19 +1,14 @@
 {
   "stories": [
     {
-      "id": "1",
-      "name": "John Doe",
-      "story": "I was struggling with my mental health for years, but after seeking help and support, I was able to overcome my challenges and find happiness again."
-    },
-    {
-      "id": "2",
-      "name": "Jane Smith",
-      "story": "I never thought I could achieve my dreams, but with hard work and determination, I was able to start my own business and create a life I love."
-    },
-    {
       "name": "David Mbauni",
       "story": "I have donated my left testicle for a brighter tomorrow for the receipient.",
       "id": "-G6vFopVYPU"
+    },
+    {
+      "name": "Shadrack Muia",
+      "story": "Saved a life by donating my kidney to my little brother.",
+      "id": "oWoAvL0I-t4"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
