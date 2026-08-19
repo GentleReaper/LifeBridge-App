@@ -11,10 +11,7 @@
       "id": "oWoAvL0I-t4"
     }
   ],
-  "donors": [
-  
-  ],
-  "receipients": [
-  
-  ]
+  "donors": [],
+  "receipients": [],
+  "$schema": "./node_modules/json-server/schema.json"
 }

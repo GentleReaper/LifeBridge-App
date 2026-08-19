@@ -5,6 +5,7 @@ import About from "./pages/About";
 import HowItWorks from "./pages/HowItWorks";
 import SubmitStory from "./pages/SubmitStory";
 import Stories from "./pages/Stories";
+import DonorRegistration from "./pages/DonorRegistration";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/submit-story" element={<SubmitStory />} />
           <Route path="/stories" element={<Stories />} />
+          <Route path="/donor-registration" element={<DonorRegistration />} />
         </Routes>
       </BrowserRouter>
     </div>
