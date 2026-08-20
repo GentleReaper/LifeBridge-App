@@ -1,6 +1,26 @@
 {
   "stories": [
     {
+      "name": "John Doe",
+      "story": "I donated my kidney to a stranger and it saved their life.",
+      "id": "-G6vFopVYPU"
+    },
+    {
+      "name": "Jane Smith",
+      "story": "I donated my liver to my best friend and it changed both of our lives.",
+      "id": "oWoAvL0I-t4"
+    },
+    {
+      "name": "Michael Johnson",
+      "story": "I donated my bone marrow to a child in need and it was the most rewarding experience of my life.",
+      "id": "oWoAvL0I-t4"
+    },
+    {
+      "name": "Emily Davis",
+      "story": "I donated my cornea to a stranger and it restored their vision.",
+      "id": "-G6vFopVYPU"
+    },
+    {
       "name": "David Mbauni",
       "story": "I have donated my left testicle for a brighter tomorrow for the receipient.",
       "id": "-G6vFopVYPU"
@@ -11,7 +31,12 @@
       "id": "oWoAvL0I-t4"
     }
   ],
-  "donors": [],
+  "donors": [
+    {
+      "status": "Verified",
+      "id": "X78xCBm_0wU"
+    }
+  ],
   "receipients": [],
   "$schema": "./node_modules/json-server/schema.json"
 }

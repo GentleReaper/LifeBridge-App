@@ -15,9 +15,6 @@ const Navbar = () => {
           <Link to="/how-it-works">How It Works</Link>
         </li>
         <li>
-          <Link to="/submit-story">Submit Story</Link>
-        </li>
-        <li>
           <Link to="/stories">Stories</Link>
         </li>
       </ul>
