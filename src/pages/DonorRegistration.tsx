@@ -29,7 +29,7 @@ const DonorRegistration = () => {
   };
   return (
     <div>
-      <h1>Donor Registration</h1>
+      <h1 className="title">Donor Registration</h1>
       <form onSubmit={HandleSubmit}>
         <div>
           <label>Full Name:</label>

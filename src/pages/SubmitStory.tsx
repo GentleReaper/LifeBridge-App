@@ -26,7 +26,7 @@ const SubmitStory = () => {
   };
   return (
     <div>
-      <h1>Submit a Story</h1>
+      <h1 className="title">Submit a Story</h1>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>

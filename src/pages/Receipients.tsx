@@ -1,7 +1,7 @@
 const Receipients = () => {
   return (
     <div>
-      <h1>Receipients Record</h1>
+      <h1 className="title">Receipients Record</h1>
     </div>
   );
 };

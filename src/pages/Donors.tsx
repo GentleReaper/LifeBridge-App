@@ -27,7 +27,7 @@ const Donors = () => {
 
   return (
     <div>
-      <h1>Donors</h1>
+      <h1 className="title">Donors</h1>
       {donors.map((donor) => (
         <div key={donor.id}>
           <h3>{donor.fullName}</h3>

@@ -18,7 +18,7 @@ const Stories = () => {
 
   return (
     <div>
-      <h1>Stories</h1>
+      <h1 className="title">Stories</h1>
       {stories.length === 0 ? (
         <p>No stories available.</p>
       ) : (
