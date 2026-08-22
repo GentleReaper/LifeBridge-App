@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 type Story = {
   id: number;
@@ -24,11 +25,14 @@ const Stories = () => {
       ) : (
         stories.map((item) => (
           <div key={item.id}>
-            <h3>{item.name}</h3>
+            <h3 className="text-2xl font-serif">{item.name}</h3>
             <p>{item.story}</p>
           </div>
         ))
       )}
+      <button className="button">
+        <Link to="/submit-story">Add Story</Link>
+      </button>
     </div>
   );
 };
