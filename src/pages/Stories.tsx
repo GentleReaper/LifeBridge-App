@@ -20,7 +20,7 @@ const Stories = () => {
     <div>
       <h1 className="title">Stories</h1>
       {stories.length === 0 ? (
-        <p>No stories available.</p>
+        <p className="slogan">No stories available.</p>
       ) : (
         stories.map((item) => (
           <div key={item.id}>

@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+body {
+  @apply bg-gray-100 text-gray-900 text-center;
+}
 .title {
   @apply text-2xl font-bold mb-4;
+}
+.slogan {
+  @apply mt-4 text-gray-600;
 }
