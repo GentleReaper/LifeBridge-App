@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-800 text-white p-4 flex justify-between items-center">
+    <nav className="bg-gray-800 text-white p-4 flex justify-between items-center py-10">
       <h1 className="text-4xl font-bold">LifeBridge</h1>
-      <ul className="flex space-x-4">
+      <ul className="flex space-x-4 text-lg">
         <li>
           <Link to="/">Home</Link>
         </li>

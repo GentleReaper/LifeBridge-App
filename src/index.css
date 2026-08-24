@@ -1,16 +1,48 @@
 @import "tailwindcss";
 
+html, body, #root{
+  max-width: 100%;
+  overflow-x: hidden;
+}
+*{
+  box-sizing: border-box;
+}
+img, svg, video, canvas, iframe {
+  max-width: 100%;
+}
 body {
-  @apply bg-gray-100 text-gray-900 text-center;
+  @apply bg-gray-100 text-gray-800 text-center text-2xl;
 }
 .title {
-  @apply text-3xl font-bold mb-4;
+  @apply text-4xl font-extrabold mb-0 text-gray-900;
 }
 .slogan {
-  @apply mt-4 text-gray-600;
+  @apply mt-0 text-blue-400 text-sm font-bold;
 }
 .button{
-  @apply mt-6 rounded-lg bg-blue-600
+  @apply mt-6 mb-6 rounded-lg bg-blue-600
        px-6 py-3 font-semibold text-white hover:bg-blue-700 
-       hover:cursor-pointer
+       hover:cursor-pointer;
+}
+.stories-grid{
+  @apply grid grid-cols-3 gap-6 text-left px-5;
+}
+.story-card{
+  @apply overflow-hidden rounded-xl bg-white shadow-md 
+  transition hover:shadow-lg w-full mb-3;
+}
+.story-image{
+  @apply h-50 w-full object-cover mb-3;
+}
+.story-content{
+  @apply px-3 text-center
+}
+.story-content h3{
+  @apply text-xl font-bold text-blue-700;
+}
+.story-content p{
+  @apply mb-5 text-sm leading-relaxed text-gray-600;
+}
+.input{
+  @apply border-1 border-gray-700 hover:border-blue-500 rounded-sm
 }

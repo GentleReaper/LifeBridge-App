@@ -32,6 +32,7 @@ const SubmitStory = () => {
           <label>Name:</label>
           <br />
           <input
+            className="input"
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
@@ -42,13 +43,16 @@ const SubmitStory = () => {
           <label>Story:</label>
           <br />
           <textarea
+            className="input"
             value={story}
             onChange={(e) => setStory(e.target.value)}
             required
           />
         </div>
         <br />
-        <button type="submit">Submit</button>
+        <button className="button" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );

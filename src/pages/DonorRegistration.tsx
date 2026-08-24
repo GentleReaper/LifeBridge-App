@@ -4,11 +4,9 @@ const DonorRegistration = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
-  const [bloodType, setBloodType] = useState("");
-  const [donationType, setDonationType] = useState("");
   const HandleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const donorData = { fullName, email, phone, bloodType, donationType };
+    const donorData = { fullName, email, phone };
     fetch("http://localhost:3000/donors", {
       method: "POST",
       headers: {
@@ -22,8 +20,6 @@ const DonorRegistration = () => {
         setFullName("");
         setEmail("");
         setPhone("");
-        setBloodType("");
-        setDonationType("");
       })
       .catch((error) => console.error(error));
   };
@@ -35,6 +31,7 @@ const DonorRegistration = () => {
           <label>Full Name:</label>
           <br />
           <input
+            className="input"
             type="text"
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
@@ -45,6 +42,7 @@ const DonorRegistration = () => {
           <label>Email:</label>
           <br />
           <input
+            className="input"
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -55,33 +53,16 @@ const DonorRegistration = () => {
           <label>Phone:</label>
           <br />
           <input
+            className="input"
             type="tel"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
           />
         </div>
         <br />
-        <div>
-          <label>Blood Type:</label>
-          <br />
-          <input
-            type="text"
-            value={bloodType}
-            onChange={(e) => setBloodType(e.target.value)}
-          />
-        </div>
-        <br />
-        <div>
-          <label>Donation Type:</label>
-          <br />
-          <input
-            type="text"
-            value={donationType}
-            onChange={(e) => setDonationType(e.target.value)}
-          />
-        </div>
-        <br />
-        <button type="submit">Register</button>
+        <button className="button" type="submit">
+          Register
+        </button>
       </form>
     </div>
   );
