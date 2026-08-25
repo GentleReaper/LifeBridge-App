@@ -3,12 +3,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="mt-auto bg-gray-900 text-white">
-      {/* Main Footer */}
       <div
         className="mx-auto grid max-w-7xl grid-cols-1 gap-10
        px-6 py-12 sm:grid-cols-2 lg:grid-cols-4 lg:px-8 text-lg"
       >
-        {/* About LifeBridge */}
         <div>
           <h3 className="mb-5 text-xl font-bold text-white">LifeBridge</h3>
 
@@ -18,7 +16,6 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Quick Links */}
         <div>
           <h3 className="mb-5 text-lg font-semibold text-white">Quick Links</h3>
 
@@ -70,7 +67,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Get Involved */}
         <div>
           <h3 className="mb-5 text-lg font-semibold text-white">
             Get Involved
@@ -106,7 +102,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Contact */}
         <div>
           <h3 className="mb-5 text-lg font-semibold text-white">Contact Us</h3>
 
@@ -116,7 +111,6 @@ const Footer = () => {
             <p>Kenya</p>
           </div>
 
-          {/* Social Links */}
           <div className="mt-5 flex flex-wrap gap-3">
             <a
               href="#"
@@ -142,7 +136,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Footer */}
       <div className="border-t border-gray-700">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-6 py-5 text-center sm:flex-row sm:text-left lg:px-8">
           <p className="text-sm text-gray-400">
@@ -150,19 +143,19 @@ const Footer = () => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-5">
-            <a
-              href="/privacy"
+            <Link
+              to="/privacy"
               className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
             >
               Privacy Policy
-            </a>
+            </Link>
 
-            <a
-              href="/terms"
+            <Link
+              to="/terms"
               className="text-sm text-gray-400 transition-colors duration-300 hover:text-white"
             >
               Terms of Use
-            </a>
+            </Link>
           </div>
         </div>
       </div>

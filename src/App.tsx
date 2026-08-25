@@ -13,6 +13,8 @@ import DonorRegistration from "./pages/DonorRegistration";
 import ReceipientRegistration from "./pages/ReceipientRegistration";
 import Donors from "./pages/Donors";
 import Receipients from "./pages/Receipients";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import TermsOfUse from "./pages/TermsOfUse";
 
 const App = () => {
   return (
@@ -35,6 +37,8 @@ const App = () => {
           />
           <Route path="/donors" element={<Donors />} />
           <Route path="/receipients" element={<Receipients />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<TermsOfUse />} />
         </Routes>
         <Footer />
       </BrowserRouter>
