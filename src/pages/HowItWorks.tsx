@@ -1,10 +1,13 @@
 const HowItWorks = () => {
   return (
     <div>
-      <h1 className="title">How It Works</h1>
-      <p className="slogan">
-        Learn how organ donation works and how LifeBridge facilitates the
-        process.
+      <div className="nav-div">
+        <h1 className="slogan">TRANSPARENT PROCESS</h1>
+        <p className="title">How Organ Matching & Coordination Works</p>
+      </div>
+      <p>
+        From pledge to procedure: exploring the clinical rigor, mathematical
+        fairness, and ethical guarantees behind LifeBridge.
       </p>
     </div>
   );

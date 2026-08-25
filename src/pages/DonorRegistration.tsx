@@ -25,7 +25,10 @@ const DonorRegistration = () => {
   };
   return (
     <div>
-      <h1 className="title">Donor Registration</h1>
+      <div className="nav-div">
+        <h1 className="slogan">ORGAN DONOR PLEDGE</h1>
+        <p>Organ Donor Registration Form</p>
+      </div>
       <form onSubmit={HandleSubmit}>
         <div>
           <label>Full Name:</label>

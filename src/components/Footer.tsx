@@ -103,7 +103,9 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className="mb-5 text-lg font-semibold text-white">Contact Us</h3>
+          <h3 className="mb-5 text-lg font-semibold text-white  transition-colors duration-300 hover:text-blue-400">
+            <Link to="/contact">Contact Us</Link>
+          </h3>
 
           <div className="space-y-2 text-gray-300">
             <p>Email: lifebridge@example.com</p>

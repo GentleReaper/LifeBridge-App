@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <div>
-      <div className="mt-3 mb-5 py-10">
+      <div className="nav-div">
         <h1 className="slogan">
           NATIONAL ORGAN & TISSUE REGISTRY • VERIFIED ETHICAL PLATFORM
         </h1>

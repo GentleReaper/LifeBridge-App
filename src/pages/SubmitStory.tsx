@@ -26,7 +26,9 @@ const SubmitStory = () => {
   };
   return (
     <div>
-      <h1 className="title">Submit a Story</h1>
+      <div className="nav-div">
+        <h1 className="title">Submit Your Transplant Story</h1>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>
@@ -51,7 +53,7 @@ const SubmitStory = () => {
         </div>
         <br />
         <button className="button" type="submit">
-          Submit
+          Publish Story
         </button>
       </form>
     </div>

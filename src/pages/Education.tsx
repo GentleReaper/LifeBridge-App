@@ -1,9 +1,13 @@
 const Education = () => {
   return (
     <div>
-      <h1 className="title">Education Perspective</h1>
-      <p className="slogan">
-        Learn more about the impacts and benefits of organ donation.
+      <div className="nav-div">
+        <h1 className="slogan">EDUCATION & AWARENESS</h1>
+        <p className="title">Understanding Organ Donation & Myths</p>
+      </div>
+      <p>
+        Empowering you with accurate medical facts, religious endorsements, and
+        answers to common concerns.
       </p>
     </div>
   );

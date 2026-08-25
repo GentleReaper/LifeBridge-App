@@ -1,10 +1,16 @@
 const About = () => {
   return (
     <div>
-      <h1 className="title">About LifeBridge</h1>
-      <p className="slogan">
-        LifeBridge is a platform dedicated to promote awareness and
-        participation in organ donation.
+      <div className="nav-div">
+        <h1 className="slogan">ABOUT LIFEBRIDGE</h1>
+        <p className="title">
+          Bridging Hope & Humanity Through Transparent Organ Matching
+        </p>
+      </div>
+      <p>
+        Founded with a single mission: to eliminate organ donation waiting list
+        bottlenecks through ethical technology, public awareness, and verified
+        hospital partnerships.
       </p>
     </div>
   );

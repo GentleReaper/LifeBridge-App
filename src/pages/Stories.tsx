@@ -19,7 +19,17 @@ const Stories = () => {
 
   return (
     <div>
-      <h1 className="title">Stories</h1>
+      <div className="nav-div">
+        <h1 className="slogan">INSPIRING JOURNEYS</h1>
+        <p className="title">Stories of Life Restored & Honored</p>
+      </div>
+      <p>
+        Real testimonies from organ recipients, living donors, and courageous
+        donor families who chose to give the gift of life.
+      </p>
+      <button className="button">
+        <Link to="/submit-story">Share Your Story</Link>
+      </button>
       <div className="stories-grid">
         {stories.length === 0 ? (
           <p className="slogan">No stories available.</p>
@@ -39,9 +49,6 @@ const Stories = () => {
           ))
         )}
       </div>
-      <button className="button">
-        <Link to="/submit-story">Add Story</Link>
-      </button>
     </div>
   );
 };
