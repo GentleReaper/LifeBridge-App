@@ -18,6 +18,7 @@ const Home = () => {
         transplant teams, and patients awaiting life-saving transplants through
         transparent, secure, and medically verified algorithms.
       </p>
+      <br />
 
       <div className="grid grid-cols-2 gap-10 px-5 py-5">
         <Link to={"/donor-registration"}>
