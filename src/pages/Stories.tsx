@@ -5,6 +5,7 @@ type Story = {
   id: number;
   name: string;
   story: string;
+  image: string;
 };
 
 const Stories = () => {
@@ -32,15 +33,11 @@ const Stories = () => {
       </button>
       <div className="stories-grid">
         {stories.length === 0 ? (
-          <p className="slogan">No stories available.</p>
+          <p className="text-right pb-5 font-semibold">No stories available.</p>
         ) : (
           stories.map((item) => (
             <div className="story-card" key={item.id}>
-              <img
-                src="https://placehold.co/600x400"
-                className="story-image"
-                alt=""
-              />
+              <img src={item.image} className="story-image" alt="" />
               <div className="story-content">
                 <h3 className="text-2xl font-serif">{item.name}</h3>
                 <p>{item.story}</p>

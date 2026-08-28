@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 
 const SubmitStory = () => {
+  const [image, setImage] = useState("");
   const [name, setName] = useState("");
   const [story, setStory] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
 
-    const newStory = { name, story };
+    const newStory = { image, name, story };
 
     fetch("http://localhost:3000/stories", {
       method: "POST",
@@ -19,6 +20,7 @@ const SubmitStory = () => {
       .then((response) => response.json())
       .then(() => {
         alert("Story submitted successfully!");
+        setImage("");
         setName("");
         setStory("");
       })
@@ -30,6 +32,17 @@ const SubmitStory = () => {
         <h1 className="title">Submit Your Transplant Story</h1>
       </div>
       <form onSubmit={handleSubmit}>
+        <div>
+          <label>Image:</label>
+          <br />
+          <input
+            className="input"
+            type="text"
+            value={image}
+            onChange={(e) => setImage(e.target.value)}
+          />
+        </div>
+        <br />
         <div>
           <label>Name:</label>
           <br />
