@@ -29,7 +29,8 @@ const SubmitStory = () => {
   return (
     <div>
       <div className="nav-div">
-        <h1 className="title">Submit Your Transplant Story</h1>
+        <h1 className="slogan">STORY SUBMISSION</h1>
+        <p className="title">Submit Your Transplant Story</p>
       </div>
       <form onSubmit={handleSubmit}>
         <div>
