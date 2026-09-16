@@ -46,7 +46,33 @@ const DonorRegistration = () => {
       consentAgreed,
     };
 
-    console.log(newDonor);
+    fetch("http://localhost:3000/donors", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newDonor),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        alert("Donor registered successfully!");
+        setFullName("");
+        setEmail("");
+        setPhone("");
+        setDateOfBirth("");
+        setGender("");
+        setBloodGroup("");
+        setDonationType("");
+        setOrgans([]);
+        setMedicalNotes("");
+        setEmergencyName("");
+        setEmergencyRelationship("");
+        setEmergencyPhone("");
+        setCity("");
+        setCountry("");
+        setConsentAgreed(false);
+      })
+      .catch((error) => console.error(error));
   };
   return (
     <div>
@@ -316,7 +342,12 @@ const DonorRegistration = () => {
         </section>
 
         <div className="mt-8 text-center">
-          <button type="submit" className="button">
+          <button
+            type="submit"
+            className="mt-6 mb-6 rounded-lg bg-green-600
+       px-6 py-3 font-semibold text-white hover:bg-green-500 
+       hover:cursor-pointer"
+          >
             Register as Donor
           </button>
         </div>

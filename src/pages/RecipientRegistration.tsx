@@ -406,8 +406,7 @@ const RecipientRegistrationPage = () => {
             </button>
           ) : (
             <button
-              type="button"
-              onClick={handleSubmit}
+              type="submit"
               className="mt-6 mb-6 rounded-lg bg-green-600
        px-6 py-3 font-semibold text-white hover:bg-green-500 
        hover:cursor-pointer"

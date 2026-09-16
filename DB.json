@@ -39,10 +39,55 @@
   ],
   "donors": [
     {
-      "status": "Verified",
-      "id": "X78xCBm_0wU"
+      "fullName": "Shadrack Muia",
+      "email": "cyraxmuia@gmail.com",
+      "phone": "0718960576",
+      "dateOfBirth": "2003-12-08",
+      "gender": "Male",
+      "bloodGroup": "O+",
+      "donationType": "Living",
+      "organs": [
+        "Kidney"
+      ],
+      "medicalNotes": "",
+      "emergencyContact": {
+        "name": "Martha Ngugi",
+        "relationship": "Parent",
+        "phone": "0724136378"
+      },
+      "city": "Nairobi",
+      "country": "Kenya",
+      "status": "Pending",
+      "registeredAt": "2026-09-16T07:39:44.797Z",
+      "consentAgreed": true,
+      "id": "0OcpLw_KizY"
     }
   ],
-  "recipients": [],
+  "recipients": [
+    {
+      "id": "fljO_HMbP3M",
+      "recipientCardId": "RCP-1789545263495",
+      "fullName": "David Mbauni",
+      "email": "goonjoker@gmail.com",
+      "phone": "0712345678",
+      "dateOfBirth": "2004-06-08",
+      "gender": "Male",
+      "organNeeded": "Kidney",
+      "bloodGroup": "O-",
+      "medicalCondition": "Kidney failure",
+      "medicalNotes": "",
+      "emergencyContact": {
+        "name": "Amos Side",
+        "relationship": "Brother",
+        "phone": "0723456789",
+        "email": "amoside@gmail.com"
+      },
+      "city": "Nairobi",
+      "country": "Kenya",
+      "status": "Pending Verification",
+      "registeredAt": "2026-09-16T07:54:23.495Z",
+      "consentAgreed": true
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

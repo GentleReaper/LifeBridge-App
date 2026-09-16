@@ -32,13 +32,13 @@ const Home = () => {
             <p>Save lives through organ donation.</p>
           </button>
         </Link>
-        <Link to="/receipient-registration">
+        <Link to="/recipient-registration">
           <button
             className="overflow-hidden rounded-xl bg-blue-500 shadow-md 
   transition hover:shadow-lg w-full mb-3 pb-5 hover:cursor-pointer"
           >
             <h3 className="text-2xl font-serif text-white font-bold">
-              Apply as a Receipient.
+              Apply as a Recipient.
             </h3>
             <p>Be connected to generous donors.</p>
           </button>

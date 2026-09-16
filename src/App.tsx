@@ -10,9 +10,9 @@ import SubmitStory from "./pages/SubmitStory";
 import Stories from "./pages/Stories";
 import Admin from "./pages/Admin";
 import DonorRegistration from "./pages/DonorRegistration";
-import ReceipientRegistration from "./pages/RecipientRegistration";
 import Donors from "./pages/Donors";
-import Receipients from "./pages/Recipients";
+import RecipientRegistration from "./pages/RecipientRegistration";
+import Recipients from "./pages/Recipients";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import TermsOfUse from "./pages/TermsOfUse";
 import Contact from "./pages/Contact";
@@ -33,11 +33,11 @@ const App = () => {
           <Route path="/admin" element={<Admin />} />
           <Route path="/donor-registration" element={<DonorRegistration />} />
           <Route
-            path="/receipient-registration"
-            element={<ReceipientRegistration />}
+            path="/recipient-registration"
+            element={<RecipientRegistration />}
           />
           <Route path="/donors" element={<Donors />} />
-          <Route path="/receipients" element={<Receipients />} />
+          <Route path="/recipients" element={<Recipients />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/terms" element={<TermsOfUse />} />
           <Route path="/contact" element={<Contact />} />
