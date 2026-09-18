@@ -1,6 +1,6 @@
 const TermsOfUse = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">COMPLIANCE & ETHICS</h1>
         <p className="title">Legal Terms, Disclaimers & Donor Consent</p>

@@ -1,6 +1,6 @@
 const Donors = () => {
   return (
-    <div>
+    <div className="main">
       <h1 className="title">Donors Record</h1>
       <p className="slogan">List of registered donors.</p>
     </div>

@@ -27,46 +27,43 @@ const SubmitStory = () => {
       .catch((error) => console.error(error));
   };
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">STORY SUBMISSION</h1>
         <p className="title">Submit Your Transplant Story</p>
       </div>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>Image:</label>
-          <br />
-          <input
-            className="input"
-            type="text"
-            value={image}
-            onChange={(e) => setImage(e.target.value)}
-          />
-        </div>
-        <br />
-        <div>
-          <label>Name:</label>
-          <br />
-          <input
-            className="input"
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <br />
-        <div>
-          <label>Story:</label>
-          <br />
-          <textarea
-            className="input"
-            value={story}
-            onChange={(e) => setStory(e.target.value)}
-            required
-          />
-        </div>
-        <br />
-        <button className="button" type="submit">
+        <section className="form-section">
+          <h2 className="form-section-title">Tell Your Story</h2>
+          <div>
+            <label className="form-label">Image:</label>
+            <input
+              className="form-input"
+              type="text"
+              value={image}
+              onChange={(e) => setImage(e.target.value)}
+            />
+          </div>
+          <div>
+            <label className="form-label">Name:</label>
+            <input
+              className="form-input"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </div>
+          <div>
+            <label className="form-label">Story:</label>
+            <textarea
+              className="form-textarea"
+              value={story}
+              onChange={(e) => setStory(e.target.value)}
+              required
+            />
+          </div>
+        </section>
+        <button className="button1" type="submit">
           Publish Story
         </button>
       </form>

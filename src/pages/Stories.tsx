@@ -19,7 +19,7 @@ const Stories = () => {
   }, []);
 
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">INSPIRING JOURNEYS</h1>
         <p className="title">Stories of Life Restored & Honored</p>

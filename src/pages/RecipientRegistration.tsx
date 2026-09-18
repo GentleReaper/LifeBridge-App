@@ -96,7 +96,7 @@ const RecipientRegistrationPage = () => {
   };
 
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">RECIPIENT REGISTRATION</h1>
 
@@ -405,12 +405,7 @@ const RecipientRegistrationPage = () => {
               Next
             </button>
           ) : (
-            <button
-              type="submit"
-              className="mt-6 mb-6 rounded-lg bg-green-600
-       px-6 py-3 font-semibold text-white hover:bg-green-500 
-       hover:cursor-pointer"
-            >
+            <button type="submit" className="button1">
               Register
             </button>
           )}

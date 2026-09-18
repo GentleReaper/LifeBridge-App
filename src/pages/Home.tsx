@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">
           NATIONAL ORGAN & TISSUE REGISTRY • VERIFIED ETHICAL PLATFORM

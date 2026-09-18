@@ -11,10 +11,13 @@ img, svg, video, canvas, iframe {
   max-width: 100%;
 }
 body {
-  @apply bg-gray-100 text-gray-600 text-center text-2xl;
+  @apply bg-gray-100 text-gray-600 text-center text-lg;
+}
+.main{
+  @apply px-3;
 }
 .nav-div{
-  @apply mt-3 mb-5 py-10;
+  @apply mt-2 mb-4 py-7.5;
 }
 .title {
   @apply text-7xl font-extrabold mb-0 text-gray-900;
@@ -27,6 +30,12 @@ body {
        px-6 py-3 font-semibold text-white hover:bg-blue-500 
        hover:cursor-pointer;
 }
+.button1{
+  @apply mt-6 mb-6 rounded-lg bg-green-600
+       px-6 py-3 font-semibold text-white hover:bg-green-500 
+       hover:cursor-pointer;
+}
+
 .stories-grid{
   @apply grid grid-cols-3 gap-6 text-left px-5;
 }
@@ -46,10 +55,6 @@ body {
 .story-content p{
   @apply mb-5 text-sm leading-relaxed text-gray-600;
 }
-.input{
-  @apply border-2 border-gray-700 hover:border-blue-500 rounded-sm
-}
-
 
 .form-container {
   @apply mx-auto max-w-4xl;

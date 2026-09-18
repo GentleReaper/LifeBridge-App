@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Admin = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">MEDICAL ADMINISTRATOR & COORDINATOR CONSOLE</h1>
         <p className="title">LifeBridge Unified Administration Dashboard</p>

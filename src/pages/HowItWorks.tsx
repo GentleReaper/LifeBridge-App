@@ -1,6 +1,6 @@
 const HowItWorks = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">TRANSPARENT PROCESS</h1>
         <p className="title">How Organ Matching & Coordination Works</p>

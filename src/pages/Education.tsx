@@ -1,6 +1,6 @@
 const Education = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">EDUCATION & AWARENESS</h1>
         <p className="title">Understanding Organ Donation & Myths</p>

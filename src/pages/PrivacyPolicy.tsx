@@ -1,6 +1,6 @@
 const PrivacyPolicy = () => {
   return (
-    <div>
+    <div className="main">
       <div className="nav-div">
         <h1 className="slogan">DATA TRUST & COMPLIANCE</h1>
         <p className="title">Privacy & Security Policy</p>
