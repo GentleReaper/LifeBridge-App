@@ -6,7 +6,7 @@ const DonorRegistration = () => {
   const [phone, setPhone] = useState("");
   const [dateOfBirth, setDateOfBirth] = useState("");
   const [gender, setGender] = useState("");
-  const [bloodGroup, setBloodGroup] = useState("");
+  const [bloodType, setBloodType] = useState("");
   const [donationType, setDonationType] = useState("");
   const [organs, setOrgans] = useState<string[]>([]);
   const [medicalNotes, setMedicalNotes] = useState("");
@@ -28,7 +28,7 @@ const DonorRegistration = () => {
       phone,
       dateOfBirth,
       gender,
-      bloodGroup,
+      bloodType,
       donationType,
       organs,
       medicalNotes,
@@ -61,7 +61,7 @@ const DonorRegistration = () => {
         setPhone("");
         setDateOfBirth("");
         setGender("");
-        setBloodGroup("");
+        setBloodType("");
         setDonationType("");
         setOrgans([]);
         setMedicalNotes("");
@@ -154,14 +154,14 @@ const DonorRegistration = () => {
           <h2 className="form-section-title">Donation Information</h2>
 
           <div>
-            <label className="form-label">Blood Group</label>
+            <label className="form-label">Blood Type</label>
 
             <select
               className="form-input"
-              value={bloodGroup}
-              onChange={(e) => setBloodGroup(e.target.value)}
+              value={bloodType}
+              onChange={(e) => setBloodType(e.target.value)}
             >
-              <option value="">Select blood group</option>
+              <option value="">Select blood type</option>
               <option value="A+">A+</option>
               <option value="A-">A-</option>
               <option value="B+">B+</option>

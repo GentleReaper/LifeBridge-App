@@ -50,7 +50,7 @@
       "phone": "0718960576",
       "dateOfBirth": "2003-12-08",
       "gender": "Male",
-      "bloodGroup": "O+",
+      "bloodType": "O-",
       "donationType": "Living",
       "organs": [
         "Kidney"
@@ -67,30 +67,6 @@
       "registeredAt": "2026-09-16T07:39:44.797Z",
       "consentAgreed": true,
       "id": "0OcpLw_KizY"
-    },
-    {
-      "fullName": "Iqra Hussein",
-      "email": "example@gmail.com",
-      "phone": "0712345678",
-      "dateOfBirth": "2004-05-14",
-      "gender": "Female",
-      "bloodGroup": "A+",
-      "donationType": "Living",
-      "organs": [
-        "Kidney"
-      ],
-      "medicalNotes": "",
-      "emergencyContact": {
-        "name": "Shadrack Muia",
-        "relationship": "Guardian",
-        "phone": "0718960576"
-      },
-      "city": "Nairobi",
-      "country": "Kenya",
-      "status": "Pending",
-      "registeredAt": "2026-09-17T10:17:37.754Z",
-      "consentAgreed": true,
-      "id": "VZOGyLnYNe4"
     }
   ],
   "recipients": [
@@ -103,7 +79,7 @@
       "dateOfBirth": "2004-06-08",
       "gender": "Male",
       "organNeeded": "Kidney",
-      "bloodGroup": "O-",
+      "bloodType": "O-",
       "medicalCondition": "Kidney failure",
       "medicalNotes": "",
       "emergencyContact": {
