@@ -5,6 +5,11 @@ const Donors = () => {
   const [donors, setDonors] = useState<Donor[]>([]);
   const [loading, setLoading] = useState(true);
   const [errorMsg, setErrorMsg] = useState("");
+  const [searchTerm, setSearchTerm] = useState("");
+
+  const filteredDonors = donors.filter((donor) =>
+    donor.fullName.toLowerCase().includes(searchTerm.toLowerCase()),
+  );
 
   useEffect(() => {
     fetch("http://localhost:3000/donors")
@@ -96,6 +101,16 @@ const Donors = () => {
         <p className="title"> Manage registered donors.</p>
       </div>
 
+      <div className="search-container">
+        <input
+          className="search-input"
+          type="text"
+          placeholder="Search by name..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
+
       {loading && (
         <p className="text-center text-gray-600">Loading donor records...</p>
       )}
@@ -121,7 +136,7 @@ const Donors = () => {
             </thead>
 
             <tbody>
-              {donors.map((donor) => (
+              {filteredDonors.map((donor) => (
                 <tr key={donor.id} className="border-b hover:bg-gray-50">
                   <td className="px-6 py-4 font-medium">{donor.fullName}</td>
 

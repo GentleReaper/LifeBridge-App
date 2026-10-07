@@ -17,7 +17,7 @@ const Admin = () => {
           <Link to="/donors">Donors</Link>
         </button>
         <button className="button">
-          <Link to="/receipients">Receipients</Link>
+          <Link to="/recipients">Recipients</Link>
         </button>
       </div>
     </div>
