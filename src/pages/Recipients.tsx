@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { RecipientRecord } from "../types/Recipients";
+import { Trash2, Edit } from "lucide-react";
 
 const Recipients = () => {
   const [recipients, setRecipients] = useState<RecipientRecord[]>([]);
@@ -142,18 +143,12 @@ const Recipients = () => {
                   <td className="px-6 py-4">{recipient.bloodGroup}</td>
                   <td className="px-6 py-4">{recipient.status}</td>
                   <td className="px-6 py-4">
-                    <div className="flex gap-2">
-                      <button
-                        onClick={() => setEditingRecipient(recipient)}
-                        className="font-medium text-blue-600 hover:underline"
-                      >
-                        Edit
+                    <div className="flex gap-4 justify-evenly">
+                      <button onClick={() => setEditingRecipient(recipient)}>
+                        <Edit className="text-3xl text-blue-600 hover:cursor-pointer transition duration-300 hover:text-blue-500 hover:scale-110" />
                       </button>
-                      <button
-                        onClick={() => deleteRecipient(recipient.id)}
-                        className="font-medium text-red-600 hover:underline"
-                      >
-                        Delete
+                      <button onClick={() => deleteRecipient(recipient.id)}>
+                        <Trash2 className="text-3xl text-red-600 hover:cursor-pointer transition duration-300 hover:text-red-500 hover:scale-110" />
                       </button>
                     </div>
                   </td>

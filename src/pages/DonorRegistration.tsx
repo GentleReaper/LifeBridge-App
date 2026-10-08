@@ -190,58 +190,20 @@ const DonorRegistration = () => {
           <div className="mt-5">
             <label className="form-label">Organs You Wish to Donate</label>
 
-            <div className="space-y-3">
-              <label className="flex items-center gap-3">
-                <input
-                  type="checkbox"
-                  value="Kidney"
-                  onChange={(e) => {
-                    if (e.target.checked) {
-                      setOrgans([...organs, e.target.value]);
-                    } else {
-                      setOrgans(
-                        organs.filter((organ) => organ !== e.target.value),
-                      );
-                    }
-                  }}
-                />
-                Kidney
-              </label>
-
-              <label className="flex items-center gap-3">
-                <input
-                  type="checkbox"
-                  value="Liver"
-                  onChange={(e) => {
-                    if (e.target.checked) {
-                      setOrgans([...organs, e.target.value]);
-                    } else {
-                      setOrgans(
-                        organs.filter((organ) => organ !== e.target.value),
-                      );
-                    }
-                  }}
-                />
-                Liver
-              </label>
-
-              <label className="flex items-center gap-3">
-                <input
-                  type="checkbox"
-                  value="Heart"
-                  onChange={(e) => {
-                    if (e.target.checked) {
-                      setOrgans([...organs, e.target.value]);
-                    } else {
-                      setOrgans(
-                        organs.filter((organ) => organ !== e.target.value),
-                      );
-                    }
-                  }}
-                />
-                Heart
-              </label>
-            </div>
+            <select
+              className="form-input"
+              value={organs}
+              onChange={(e) => setOrgans(e.target.value.split(","))}
+            >
+              <option value="">Select organs to donate</option>
+              <option value="Kidney">Kidney</option>
+              <option value="Liver">Liver</option>
+              <option value="Heart">Heart</option>
+              <option value="Lungs">Lungs</option>
+              <option value="Pancreas">Pancreas</option>
+              <option value="Cornea">Cornea</option>
+              <option value="Bone Marrow">Bone Marrow</option>
+            </select>
           </div>
 
           <div className="mt-5">

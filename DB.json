@@ -50,7 +50,7 @@
       "phone": "0718960576",
       "dateOfBirth": "2003-12-08",
       "gender": "Male",
-      "bloodGroup": "A-",
+      "bloodGroup": "O-",
       "donationType": "Living",
       "organs": [
         "Kidney"
@@ -63,7 +63,7 @@
       },
       "city": "Nairobi",
       "country": "Kenya",
-      "status": "Approved",
+      "status": "Pending",
       "registeredAt": "2026-09-16T07:39:44.797Z",
       "consentAgreed": true,
       "id": "0OcpLw_KizY"
@@ -78,7 +78,7 @@
       "phone": "0712345678",
       "dateOfBirth": "2004-06-08",
       "gender": "Male",
-      "organNeeded": "Cornea",
+      "organNeeded": "Kidney",
       "medicalCondition": "Kidney failure",
       "medicalNotes": "",
       "emergencyContact": {
@@ -89,10 +89,10 @@
       },
       "city": "Nairobi",
       "country": "Kenya",
-      "status": "In Review",
+      "status": "Pending Verification",
       "registeredAt": "2026-09-16T07:54:23.495Z",
       "consentAgreed": true,
-      "bloodGroup": "B+"
+      "bloodGroup": "AB+"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

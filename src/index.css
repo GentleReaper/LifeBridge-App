@@ -14,7 +14,7 @@ body {
   @apply bg-gray-100 text-gray-600 text-center text-lg;
 }
 .main{
-  @apply px-15;
+  @apply mx-15 mb-15;
 }
 .nav-div{
   @apply mt-2 mb-4 py-7.5;
@@ -33,12 +33,12 @@ body {
 }
 .button{
   @apply mt-6 mb-6 rounded-lg bg-blue-600
-       px-6 py-3 font-semibold text-white hover:bg-blue-500 
+       px-6 py-3 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-blue-500 
        hover:cursor-pointer;
 }
 .button1{
   @apply mt-6 mb-6 rounded-lg bg-green-600
-       px-6 py-3 font-semibold text-white hover:bg-green-500 
+       px-6 py-3 font-semibold text-white transition duration-300 hover:scale-105 hover:bg-green-500 
        hover:cursor-pointer;
 }
 

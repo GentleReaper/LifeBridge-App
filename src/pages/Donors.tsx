@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import type { Donor } from "../types/Donors";
+import { Trash2, Edit } from "lucide-react";
 
 const Donors = () => {
   const [donors, setDonors] = useState<Donor[]>([]);
@@ -105,7 +106,7 @@ const Donors = () => {
         <input
           className="search-input"
           type="text"
-          placeholder="Search by name..."
+          placeholder=" Search by name..."
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
         />
@@ -149,18 +150,12 @@ const Donors = () => {
                   <td className="px-6 py-4">{donor.status}</td>
 
                   <td className="px-6 py-4">
-                    <div className="flex gap-3">
-                      <button
-                        onClick={() => setEditingDonor(donor)}
-                        className="font-medium text-blue-600 hover:underline"
-                      >
-                        Edit
+                    <div className="flex justify-evenly gap-4">
+                      <button onClick={() => setEditingDonor(donor)}>
+                        <Edit className="text-3xl text-blue-600 hover:cursor-pointer transition duration-300 hover:text-blue-500 hover:scale-110" />
                       </button>
-                      <button
-                        onClick={() => deleteDonor(donor.id)}
-                        className="font-medium text-red-600 hover:underline"
-                      >
-                        Delete
+                      <button onClick={() => deleteDonor(donor.id)}>
+                        <Trash2 className="text-3xl text-red-600 hover:cursor-pointer transition duration-300 hover:text-red-500 hover:scale-110" />
                       </button>
                     </div>
                   </td>
