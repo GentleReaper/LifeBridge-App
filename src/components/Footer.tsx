@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="mt-auto bg-gray-900 text-white px-7">
@@ -113,26 +113,36 @@ const Footer = () => {
             <p>Kenya</p>
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-3">
+          <div className="mt-10 flex justify-evenly">
             <a
-              href="#"
-              className="rounded-md border border-gray-700 px-3 py-2 text-sm text-gray-300 transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
+              href="https://www.facebook.com/LifeBridge"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Facebook
+              <FaFacebook className="foot-icon" />
             </a>
 
             <a
-              href="#"
-              className="rounded-md border border-gray-700 px-3 py-2 text-sm text-gray-300 transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
+              href="https://twitter.com/LifeBridge"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Twitter
+              <FaTwitter className="foot-icon" />
             </a>
 
             <a
-              href="#"
-              className="rounded-md border border-gray-700 px-3 py-2 text-sm text-gray-300 transition-all duration-300 hover:border-blue-500 hover:bg-blue-600 hover:text-white"
+              href="https://www.instagram.com/LifeBridge"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Instagram
+              <FaInstagram className="foot-icon" />
+            </a>
+            <a
+              href="https://www.youtube.com/LifeBridge"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaYoutube className="foot-icon" />
             </a>
           </div>
         </div>

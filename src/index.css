@@ -14,10 +14,16 @@ body {
   @apply bg-gray-100 text-gray-600 text-center text-lg;
 }
 .main{
-  @apply px-20;
+  @apply px-15;
 }
 .nav-div{
   @apply mt-2 mb-4 py-7.5;
+}
+.nav-link{
+  @apply transition duration-300 hover:text-blue-400 hover:scale-105;
+}
+.foot-icon{
+  @apply text-2xl transition duration-300 hover:text-blue-400 hover:scale-110;
 }
 .title {
   @apply text-7xl font-extrabold mb-0 text-gray-900;

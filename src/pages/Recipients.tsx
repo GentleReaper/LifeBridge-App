@@ -165,7 +165,7 @@ const Recipients = () => {
       )}
 
       {editingRecipient && (
-        <div className="form-container mb-8">
+        <div className="form-container mb-8 rounded-xl bg-white p-6 shadow-md">
           <h2 className="form-section-title">Edit Recipient</h2>
 
           <div className="grid gap-6 md:grid-cols-2">
@@ -288,7 +288,7 @@ const Recipients = () => {
             </div>
           </div>
 
-          <div className="mt-6 flex gap-3">
+          <div className="mt-6 flex justify-evenly">
             <button type="button" onClick={updateRecipient} className="button1">
               Update Recipient
             </button>

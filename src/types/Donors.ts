@@ -5,7 +5,7 @@ export interface Donor {
   phone: string;
   dateOfBirth: string;
   gender: string;
-  bloodType: string;
+  bloodGroup: string;
   donationType: string;
   organs: string[];
   medicalNotes: string;

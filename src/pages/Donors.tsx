@@ -129,7 +129,7 @@ const Donors = () => {
                 <th className="px-6 py-4">Name</th>
                 <th className="px-6 py-4">Email</th>
                 <th className="px-6 py-4">Phone</th>
-                <th className="px-6 py-4">Blood Type</th>
+                <th className="px-6 py-4">Blood Group</th>
                 <th className="px-6 py-4">Status</th>
                 <th className="px-6 py-4">Actions</th>
               </tr>
@@ -144,7 +144,7 @@ const Donors = () => {
 
                   <td className="px-6 py-4">{donor.phone}</td>
 
-                  <td className="px-6 py-4">{donor.bloodType}</td>
+                  <td className="px-6 py-4">{donor.bloodGroup}</td>
 
                   <td className="px-6 py-4">{donor.status}</td>
 
@@ -168,119 +168,114 @@ const Donors = () => {
               ))}
             </tbody>
           </table>
+        </div>
+      )}
+      {editingDonor && (
+        <div className="form-container mb-8 rounded-xl bg-white p-6 shadow-md">
+          <h2 className="form-section-title">Edit Donor</h2>
 
-          {editingDonor && (
-            <section className="mt-8 rounded-xl bg-white p-6 shadow-md">
-              <h2 className="form-section-title">Edit Donor</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div>
+              <label className="form-label">Full Name</label>
 
-              <div className="grid gap-6 md:grid-cols-2">
-                <div>
-                  <label className="form-label">Full Name</label>
+              <input
+                type="text"
+                value={editingDonor.fullName}
+                onChange={(e) =>
+                  setEditingDonor({
+                    ...editingDonor,
+                    fullName: e.target.value,
+                  })
+                }
+                className="form-input"
+              />
+            </div>
 
-                  <input
-                    type="text"
-                    value={editingDonor.fullName}
-                    onChange={(e) =>
-                      setEditingDonor({
-                        ...editingDonor,
-                        fullName: e.target.value,
-                      })
-                    }
-                    className="form-input"
-                  />
-                </div>
+            <div>
+              <label className="form-label">Email</label>
 
-                <div>
-                  <label className="form-label">Email</label>
+              <input
+                type="email"
+                value={editingDonor.email}
+                onChange={(e) =>
+                  setEditingDonor({
+                    ...editingDonor,
+                    email: e.target.value,
+                  })
+                }
+                className="form-input"
+              />
+            </div>
 
-                  <input
-                    type="email"
-                    value={editingDonor.email}
-                    onChange={(e) =>
-                      setEditingDonor({
-                        ...editingDonor,
-                        email: e.target.value,
-                      })
-                    }
-                    className="form-input"
-                  />
-                </div>
+            <div>
+              <label className="form-label">Phone</label>
 
-                <div>
-                  <label className="form-label">Phone</label>
+              <input
+                type="tel"
+                value={editingDonor.phone}
+                onChange={(e) =>
+                  setEditingDonor({
+                    ...editingDonor,
+                    phone: e.target.value,
+                  })
+                }
+                className="form-input"
+              />
+            </div>
 
-                  <input
-                    type="tel"
-                    value={editingDonor.phone}
-                    onChange={(e) =>
-                      setEditingDonor({
-                        ...editingDonor,
-                        phone: e.target.value,
-                      })
-                    }
-                    className="form-input"
-                  />
-                </div>
+            <div>
+              <label className="form-label">Blood Group</label>
 
-                <div>
-                  <label className="form-label">Blood Group</label>
+              <select
+                value={editingDonor.bloodGroup}
+                onChange={(e) =>
+                  setEditingDonor({
+                    ...editingDonor,
+                    bloodGroup: e.target.value,
+                  })
+                }
+                className="form-input"
+              >
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+              </select>
+            </div>
 
-                  <select
-                    value={editingDonor.bloodType}
-                    onChange={(e) =>
-                      setEditingDonor({
-                        ...editingDonor,
-                        bloodType: e.target.value,
-                      })
-                    }
-                    className="form-input"
-                  >
-                    <option value="">Select blood group</option>
-                    <option value="A+">A+</option>
-                    <option value="A-">A-</option>
-                    <option value="B+">B+</option>
-                    <option value="B-">B-</option>
-                    <option value="AB+">AB+</option>
-                    <option value="AB-">AB-</option>
-                    <option value="O+">O+</option>
-                    <option value="O-">O-</option>
-                  </select>
-                </div>
+            <div>
+              <label className="form-label">Status</label>
 
-                <div>
-                  <label className="form-label">Status</label>
+              <select
+                value={editingDonor.status}
+                onChange={(e) =>
+                  setEditingDonor({
+                    ...editingDonor,
+                    status: e.target.value,
+                  })
+                }
+                className="form-input"
+              >
+                <option value="Pending">Pending</option>
+                <option value="Approved">Approved</option>
+                <option value="Rejected">Rejected</option>
+              </select>
+            </div>
+          </div>
 
-                  <select
-                    value={editingDonor.status}
-                    onChange={(e) =>
-                      setEditingDonor({
-                        ...editingDonor,
-                        status: e.target.value,
-                      })
-                    }
-                    className="form-input"
-                  >
-                    <option value="Pending">Pending</option>
-                    <option value="Approved">Approved</option>
-                    <option value="Rejected">Rejected</option>
-                  </select>
-                </div>
-              </div>
+          <div className="mt-6 flex justify-evenly">
+            <button onClick={() => updateDonor()} className="button1">
+              Update Donor
+            </button>
 
-              <div className="mt-6 flex gap-4">
-                <button onClick={() => updateDonor()} className="button1">
-                  Update Donor
-                </button>
-
-                <button
-                  onClick={() => setEditingDonor(null)}
-                  className="button"
-                >
-                  Cancel
-                </button>
-              </div>
-            </section>
-          )}
+            <button onClick={() => setEditingDonor(null)} className="button">
+              Cancel
+            </button>
+          </div>
         </div>
       )}
     </div>
