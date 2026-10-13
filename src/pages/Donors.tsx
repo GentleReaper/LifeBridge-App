@@ -151,11 +151,17 @@ const Donors = () => {
 
                   <td className="px-6 py-4">
                     <div className="flex justify-evenly gap-4">
-                      <button onClick={() => setEditingDonor(donor)}>
-                        <Edit className="text-3xl text-blue-600 hover:cursor-pointer transition duration-300 hover:text-blue-500 hover:scale-110" />
+                      <button
+                        onClick={() => setEditingDonor(donor)}
+                        className="p-1 bg-blue-600 rounded-lg hover:cursor-pointer transition duration-300 hover:bg-blue-500 hover:scale-110"
+                      >
+                        <Edit className="text-3xl text-gray-50" />
                       </button>
-                      <button onClick={() => deleteDonor(donor.id)}>
-                        <Trash2 className="text-3xl text-red-600 hover:cursor-pointer transition duration-300 hover:text-red-500 hover:scale-110" />
+                      <button
+                        onClick={() => deleteDonor(donor.id)}
+                        className="p-1 bg-red-600 rounded-lg hover:cursor-pointer transition duration-300 hover:bg-red-500 hover:scale-110"
+                      >
+                        <Trash2 className="text-3xl text-gray-50" />
                       </button>
                     </div>
                   </td>

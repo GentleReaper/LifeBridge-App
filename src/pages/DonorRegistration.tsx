@@ -142,7 +142,7 @@ const DonorRegistration = () => {
               value={gender}
               onChange={(e) => setGender(e.target.value)}
             >
-              <option value="">Select gender</option>
+              <option value="placeholder">Select gender</option>
               <option value="Male">Male</option>
               <option value="Female">Female</option>
               <option value="Other">Other</option>

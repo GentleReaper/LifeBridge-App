@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Heart, Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -8,7 +8,12 @@ const Navbar = () => {
   return (
     <nav className="bg-gray-800 text-white">
       <div className="flex items-center justify-between px-6 py-6 lg:px-8">
-        <h1 className="text-3xl font-bold">LifeBridge</h1>
+        <h1 className="text-3xl font-bold flex">
+          <div className="mr-2 flex items-center justify-center w-10 h-10 bg-slate-500 rounded-full border-2 border-blue-500 shadow-md">
+            <Heart className="text-red-700 fill-red-500" />
+          </div>
+          LifeBridge
+        </h1>
 
         {/* Desktop Navigation */}
         <ul className="hidden items-center gap-6 text-base font-semibold lg:flex">
